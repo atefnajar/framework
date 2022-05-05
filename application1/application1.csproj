@@ -47,37 +47,92 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="connexion.cs" />
+    <Compile Include="login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="principal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="principal.Designer.cs">
+      <DependentUpon>principal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form3.cs">
+    <Compile Include="Gproduit.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form3.Designer.cs">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <Compile Include="Gproduit.Designer.cs">
+      <DependentUpon>Gproduit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gfournisseur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gfournisseur.Designer.cs">
+      <DependentUpon>Gfournisseur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="parametre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="parametre.Designer.cs">
+      <DependentUpon>parametre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gclients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gclients.Designer.cs">
+      <DependentUpon>Gclients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gemployé.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gemployé.Designer.cs">
+      <DependentUpon>Gemployé.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gvente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gvente.Designer.cs">
+      <DependentUpon>Gvente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gachat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gachat.Designer.cs">
+      <DependentUpon>Gachat.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.fr.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="principal.fr.resx">
+      <DependentUpon>principal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="principal.resx">
+      <DependentUpon>principal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form3.resx">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <EmbeddedResource Include="Gproduit.resx">
+      <DependentUpon>Gproduit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gfournisseur.resx">
+      <DependentUpon>Gfournisseur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="parametre.resx">
+      <DependentUpon>parametre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gclients.resx">
+      <DependentUpon>Gclients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gemployé.resx">
+      <DependentUpon>Gemployé.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gvente.resx">
+      <DependentUpon>Gvente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gachat.resx">
+      <DependentUpon>Gachat.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -176,6 +231,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-x-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye-solid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye-slash-solid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-close-48 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-close-48 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye-solid1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye-slash-solid1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye-solid2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye-slash-solid2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

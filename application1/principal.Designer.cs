@@ -1,7 +1,7 @@
 ﻿
 namespace application1
 {
-    partial class Form2
+    partial class principal
     {
         /// <summary>
         /// Required designer variable.
@@ -38,14 +38,12 @@ namespace application1
             this.linkLabel7 = new System.Windows.Forms.LinkLabel();
             this.linkLabel5 = new System.Windows.Forms.LinkLabel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.linkLabel6 = new System.Windows.Forms.LinkLabel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
@@ -62,40 +60,48 @@ namespace application1
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.linkLabel4 = new System.Windows.Forms.LinkLabel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.c = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.vnp = new System.Windows.Forms.TextBox();
+            this.b = new System.Windows.Forms.TextBox();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.panel8.SuspendLayout();
+            this.panel9.SuspendLayout();
+            this.panel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            this.panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            this.panel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.SuspendLayout();
             // 
             // linkLabel1
@@ -162,6 +168,7 @@ namespace application1
             this.linkLabel8.TabIndex = 14;
             this.linkLabel8.TabStop = true;
             this.linkLabel8.Text = "Parametre Du Compte";
+            this.linkLabel8.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel8_LinkClicked);
             // 
             // linkLabel9
             // 
@@ -175,6 +182,7 @@ namespace application1
             this.linkLabel9.TabIndex = 13;
             this.linkLabel9.TabStop = true;
             this.linkLabel9.Text = " Gestion Employés";
+            this.linkLabel9.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel9_LinkClicked);
             // 
             // linkLabel7
             // 
@@ -188,6 +196,7 @@ namespace application1
             this.linkLabel7.TabIndex = 11;
             this.linkLabel7.TabStop = true;
             this.linkLabel7.Text = "Gestion des clients";
+            this.linkLabel7.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel7_LinkClicked);
             // 
             // linkLabel5
             // 
@@ -219,16 +228,6 @@ namespace application1
             this.panel3.TabIndex = 4;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
-            // pictureBox9
-            // 
-            this.pictureBox9.BackgroundImage = global::application1.Properties.Resources.icons8_paramètres_50;
-            this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox9.Location = new System.Drawing.Point(51, 3);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(38, 31);
-            this.pictureBox9.TabIndex = 15;
-            this.pictureBox9.TabStop = false;
-            // 
             // textBox2
             // 
             this.textBox2.ForeColor = System.Drawing.Color.DarkRed;
@@ -245,7 +244,7 @@ namespace application1
             this.label2.ForeColor = System.Drawing.Color.DarkRed;
             this.label2.Location = new System.Drawing.Point(752, 11);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(101, 16);
+            this.label2.Size = new System.Drawing.Size(100, 16);
             this.label2.TabIndex = 2;
             this.label2.Text = "Date Session";
             // 
@@ -266,7 +265,7 @@ namespace application1
             this.label1.ForeColor = System.Drawing.Color.DarkRed;
             this.label1.Location = new System.Drawing.Point(406, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 16);
+            this.label1.Size = new System.Drawing.Size(50, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "Admin";
             // 
@@ -295,23 +294,13 @@ namespace application1
             this.panel4.Size = new System.Drawing.Size(1084, 27);
             this.panel4.TabIndex = 5;
             // 
-            // pictureBox7
-            // 
-            this.pictureBox7.BackgroundImage = global::application1.Properties.Resources.sidentifier;
-            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox7.Location = new System.Drawing.Point(862, -4);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(31, 31);
-            this.pictureBox7.TabIndex = 19;
-            this.pictureBox7.TabStop = false;
-            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.MintCream;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.DarkRed;
-            this.label3.Location = new System.Drawing.Point(47, 3);
+            this.label3.Location = new System.Drawing.Point(47, 2);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(269, 24);
             this.label3.TabIndex = 0;
@@ -334,9 +323,9 @@ namespace application1
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.textBox3);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(765, 95);
+            this.groupBox1.Location = new System.Drawing.Point(765, 108);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(319, 303);
+            this.groupBox1.Size = new System.Drawing.Size(319, 298);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
@@ -348,12 +337,13 @@ namespace application1
             this.textBox8.ReadOnly = true;
             this.textBox8.Size = new System.Drawing.Size(85, 29);
             this.textBox8.TabIndex = 43;
+            this.textBox8.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.SteelBlue;
+            this.label9.ForeColor = System.Drawing.Color.Blue;
             this.label9.Location = new System.Drawing.Point(1, 82);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(179, 20);
@@ -477,17 +467,6 @@ namespace application1
             this.panel2.Size = new System.Drawing.Size(209, 114);
             this.panel2.TabIndex = 11;
             // 
-            // pictureBox8
-            // 
-            this.pictureBox8.BackColor = System.Drawing.Color.Lavender;
-            this.pictureBox8.BackgroundImage = global::application1.Properties.Resources.decision_dachat;
-            this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox8.Location = new System.Drawing.Point(34, 12);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(135, 67);
-            this.pictureBox8.TabIndex = 10;
-            this.pictureBox8.TabStop = false;
-            // 
             // linkLabel4
             // 
             this.linkLabel4.AutoSize = true;
@@ -496,23 +475,13 @@ namespace application1
             this.linkLabel4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.linkLabel4.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.linkLabel4.LinkColor = System.Drawing.Color.Transparent;
-            this.linkLabel4.Location = new System.Drawing.Point(15, 88);
+            this.linkLabel4.Location = new System.Drawing.Point(7, 80);
             this.linkLabel4.Name = "linkLabel4";
             this.linkLabel4.Size = new System.Drawing.Size(170, 20);
             this.linkLabel4.TabIndex = 8;
             this.linkLabel4.TabStop = true;
             this.linkLabel4.Text = "Gestion Des Achats";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Lavender;
-            this.pictureBox1.BackgroundImage = global::application1.Properties.Resources.decision_dachat;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(34, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(135, 67);
-            this.pictureBox1.TabIndex = 10;
-            this.pictureBox1.TabStop = false;
+            this.linkLabel4.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel4_LinkClicked_1);
             // 
             // panel6
             // 
@@ -523,17 +492,6 @@ namespace application1
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(209, 114);
             this.panel6.TabIndex = 10;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Lavender;
-            this.pictureBox2.BackgroundImage = global::application1.Properties.Resources.produit;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Location = new System.Drawing.Point(35, 12);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(135, 67);
-            this.pictureBox2.TabIndex = 9;
-            this.pictureBox2.TabStop = false;
             // 
             // panel7
             // 
@@ -546,17 +504,6 @@ namespace application1
             this.panel7.TabIndex = 15;
             this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Lavender;
-            this.pictureBox3.BackgroundImage = global::application1.Properties.Resources.borne_de_point_de_vente;
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox3.Location = new System.Drawing.Point(38, 12);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(135, 67);
-            this.pictureBox3.TabIndex = 10;
-            this.pictureBox3.TabStop = false;
-            // 
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.SteelBlue;
@@ -567,17 +514,6 @@ namespace application1
             this.panel8.Size = new System.Drawing.Size(209, 114);
             this.panel8.TabIndex = 16;
             // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackColor = System.Drawing.Color.Lavender;
-            this.pictureBox5.BackgroundImage = global::application1.Properties.Resources.client__1_;
-            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox5.Location = new System.Drawing.Point(34, 15);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(135, 67);
-            this.pictureBox5.TabIndex = 13;
-            this.pictureBox5.TabStop = false;
-            // 
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.Maroon;
@@ -587,6 +523,40 @@ namespace application1
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(209, 114);
             this.panel9.TabIndex = 17;
+            this.panel9.Paint += new System.Windows.Forms.PaintEventHandler(this.panel9_Paint);
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel10.Controls.Add(this.pictureBox6);
+            this.panel10.Controls.Add(this.linkLabel9);
+            this.panel10.Location = new System.Drawing.Point(544, 302);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(209, 114);
+            this.panel10.TabIndex = 18;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.BackgroundImage = global::application1.Properties.Resources.icons8_x_64;
+            this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox10.Location = new System.Drawing.Point(1046, -3);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(38, 31);
+            this.pictureBox10.TabIndex = 16;
+            this.pictureBox10.TabStop = false;
+            this.pictureBox10.Click += new System.EventHandler(this.pictureBox10_Click);
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.Lavender;
+            this.pictureBox6.BackgroundImage = global::application1.Properties.Resources.employe1;
+            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox6.Location = new System.Drawing.Point(38, 15);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(135, 67);
+            this.pictureBox6.TabIndex = 14;
+            this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
             // pictureBox4
             // 
@@ -600,37 +570,143 @@ namespace application1
             this.pictureBox4.TabStop = false;
             this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
-            // panel10
+            // pictureBox5
             // 
-            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel10.Controls.Add(this.pictureBox6);
-            this.panel10.Controls.Add(this.linkLabel9);
-            this.panel10.Location = new System.Drawing.Point(544, 302);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(209, 114);
-            this.panel10.TabIndex = 18;
+            this.pictureBox5.BackColor = System.Drawing.Color.Lavender;
+            this.pictureBox5.BackgroundImage = global::application1.Properties.Resources.client__1_;
+            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox5.Location = new System.Drawing.Point(34, 15);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(135, 67);
+            this.pictureBox5.TabIndex = 13;
+            this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
-            // pictureBox6
+            // pictureBox3
             // 
-            this.pictureBox6.BackColor = System.Drawing.Color.Lavender;
-            this.pictureBox6.BackgroundImage = global::application1.Properties.Resources.employe1;
-            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox6.Location = new System.Drawing.Point(38, 15);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(135, 67);
-            this.pictureBox6.TabIndex = 14;
-            this.pictureBox6.TabStop = false;
+            this.pictureBox3.BackColor = System.Drawing.Color.Lavender;
+            this.pictureBox3.BackgroundImage = global::application1.Properties.Resources.borne_de_point_de_vente;
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox3.Location = new System.Drawing.Point(38, 12);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(135, 67);
+            this.pictureBox3.TabIndex = 10;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
-            // pictureBox10
+            // pictureBox2
             // 
-            this.pictureBox10.BackgroundImage = global::application1.Properties.Resources.icons8_x_64;
-            this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox10.Location = new System.Drawing.Point(1046, -3);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(38, 31);
-            this.pictureBox10.TabIndex = 16;
-            this.pictureBox10.TabStop = false;
-            this.pictureBox10.Click += new System.EventHandler(this.pictureBox10_Click);
+            this.pictureBox2.BackColor = System.Drawing.Color.Lavender;
+            this.pictureBox2.BackgroundImage = global::application1.Properties.Resources.produit;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox2.Location = new System.Drawing.Point(35, 12);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(135, 67);
+            this.pictureBox2.TabIndex = 9;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.BackColor = System.Drawing.Color.Lavender;
+            this.pictureBox8.BackgroundImage = global::application1.Properties.Resources.decision_dachat;
+            this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox8.Location = new System.Drawing.Point(26, 0);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(135, 67);
+            this.pictureBox8.TabIndex = 10;
+            this.pictureBox8.TabStop = false;
+            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Lavender;
+            this.pictureBox1.BackgroundImage = global::application1.Properties.Resources.decision_dachat;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(34, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(135, 67);
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackgroundImage = global::application1.Properties.Resources.sidentifier;
+            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox7.Location = new System.Drawing.Point(862, -4);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(31, 31);
+            this.pictureBox7.TabIndex = 19;
+            this.pictureBox7.TabStop = false;
+            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.BackgroundImage = global::application1.Properties.Resources.icons8_paramètres_50;
+            this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox9.Location = new System.Drawing.Point(51, 3);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(38, 31);
+            this.pictureBox9.TabIndex = 15;
+            this.pictureBox9.TabStop = false;
+            this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Black;
+            this.label10.Location = new System.Drawing.Point(72, 465);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(63, 20);
+            this.label10.TabIndex = 44;
+            this.label10.Text = "Caisse";
+            // 
+            // c
+            // 
+            this.c.Location = new System.Drawing.Point(152, 464);
+            this.c.Name = "c";
+            this.c.ReadOnly = true;
+            this.c.Size = new System.Drawing.Size(85, 20);
+            this.c.TabIndex = 45;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.Black;
+            this.label11.Location = new System.Drawing.Point(247, 467);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(87, 20);
+            this.label11.TabIndex = 46;
+            this.label11.Text = "benefices";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.Black;
+            this.label12.Location = new System.Drawing.Point(482, 467);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(131, 20);
+            this.label12.TabIndex = 47;
+            this.label12.Text = "vente non payé";
+            // 
+            // vnp
+            // 
+            this.vnp.Location = new System.Drawing.Point(619, 467);
+            this.vnp.Name = "vnp";
+            this.vnp.ReadOnly = true;
+            this.vnp.Size = new System.Drawing.Size(85, 20);
+            this.vnp.TabIndex = 48;
+            // 
+            // b
+            // 
+            this.b.Location = new System.Drawing.Point(371, 464);
+            this.b.Name = "b";
+            this.b.ReadOnly = true;
+            this.b.Size = new System.Drawing.Size(85, 20);
+            this.b.TabIndex = 49;
             // 
             // Form2
             // 
@@ -638,11 +714,17 @@ namespace application1
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ClientSize = new System.Drawing.Size(1083, 542);
+            this.Controls.Add(this.c);
+            this.Controls.Add(this.b);
             this.Controls.Add(this.pictureBox10);
+            this.Controls.Add(this.vnp);
             this.Controls.Add(this.panel10);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.panel9);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel7);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.groupBox1);
@@ -655,35 +737,36 @@ namespace application1
             this.Load += new System.EventHandler(this.Form2_Load);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -735,5 +818,11 @@ namespace application1
         private System.Windows.Forms.LinkLabel linkLabel4;
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox c;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox vnp;
+        private System.Windows.Forms.TextBox b;
     }
 }
